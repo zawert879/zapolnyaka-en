@@ -9,9 +9,7 @@
     "start": "node --inspect ./dist/src/index.js",
     "start:dev": "ts-node src/index.ts",
     "dev": "yarn start:dev",
-    "lint": "eslint .",
-    "test": "jest",
-    "pkg": "pkg package.json"
+    "lint": "eslint ."
   },
   "devDependencies": {
     "@types/cli-progress": "^3.11.6",
@@ -36,11 +34,6 @@
     "progress": "^2.0.3",
     "rimraf": "^5.0.5",
     "zod": "^3.24.1"
-  },
-  "pkg": {
-    "scripts": "dist/**/*.js",
-    "targets": [ "node18-win-x64" ],
-    "outputPath": "distExe"
   },
   "engines": {
     "node": "20"
